@@ -1,0 +1,17 @@
+{
+  "name": "@example/rust",
+  "private": true,
+  "template": { "language": "rust" },
+  "scripts": {
+    "dev": "node ../../tools/manager/cli.mjs exec dev",
+    "start": "node ../../tools/manager/cli.mjs exec start",
+    "deploy": "node ../../tools/manager/cli.mjs exec deploy",
+    "pkg:format": "node ../../tools/manager/cli.mjs exec format",
+    "pkg:format:check": "node ../../tools/manager/cli.mjs exec format:check",
+    "pkg:lint": "node ../../tools/manager/cli.mjs exec lint",
+    "pkg:lint:fix": "node ../../tools/manager/cli.mjs exec lint:fix",
+    "pkg:typecheck": "node ../../tools/manager/cli.mjs exec typecheck",
+    "pkg:test": "node ../../tools/manager/cli.mjs exec test",
+    "pkg:build": "node ../../tools/manager/cli.mjs exec build"
+  }
+}

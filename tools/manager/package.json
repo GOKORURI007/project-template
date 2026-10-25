@@ -1,0 +1,27 @@
+{
+  "name": "@template/manager",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node cli.mjs validate dev",
+    "start": "node cli.mjs validate start",
+    "deploy": "node cli.mjs validate deploy"
+  },
+  "engines": {
+    "node": ">=24.10"
+  },
+  "template": {
+    "manager": true,
+    "configVersion": 1,
+    "apiVersion": 1,
+    "minTurbo": "2.11.10"
+  },
+  "dependencies": {
+    "@renovatebot/pep440": "5.0.1",
+    "cross-spawn": "7.0.6",
+    "semver": "7.8.5",
+    "smol-toml": "1.9.1",
+    "yaml": "2.9.1"
+  }
+}

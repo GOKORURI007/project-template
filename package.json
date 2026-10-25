@@ -1,0 +1,57 @@
+{
+  "name": "project-template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A reusable multilingual Turbo workspace",
+  "author": "yaojca",
+  "engines": {
+    "node": ">=24.10"
+  },
+  "packageManager": "npm@12.2.0",
+  "workspaces": [
+    "packages/*",
+    "tools/*"
+  ],
+  "template": {
+    "root": true
+  },
+  "scripts": {
+    "dev": "node tools/manager/cli.mjs task dev",
+    "start": "node tools/manager/cli.mjs task start",
+    "deploy": "node tools/manager/cli.mjs task deploy",
+    "init": "node tools/manager/cli.mjs init",
+    "release": "node tools/manager/cli.mjs release",
+    "release:retry": "node tools/manager/cli.mjs release:retry",
+    "format": "node tools/manager/cli.mjs task format",
+    "format:check": "node tools/manager/cli.mjs task format:check",
+    "lint": "node tools/manager/cli.mjs task lint",
+    "lint:fix": "node tools/manager/cli.mjs task lint:fix",
+    "typecheck": "node tools/manager/cli.mjs task typecheck",
+    "test": "node tools/manager/cli.mjs task test",
+    "build": "node tools/manager/cli.mjs task build",
+    "test:integration": "node --test tests/*.test.mjs",
+    "submodule": "node tools/manager/cli.mjs submodule",
+    "submodule:status": "node tools/manager/cli.mjs submodule:status",
+    "submodule:init": "node tools/manager/cli.mjs submodule:init",
+    "submodule:sync": "node tools/manager/cli.mjs submodule:sync",
+    "submodule:update": "node tools/manager/cli.mjs submodule:update",
+    "submodule:push": "node tools/manager/cli.mjs submodule:push",
+    "subtree": "node tools/manager/cli.mjs subtree",
+    "subtree:status": "node tools/manager/cli.mjs subtree:status",
+    "subtree:init": "node tools/manager/cli.mjs subtree:init",
+    "subtree:sync": "node tools/manager/cli.mjs subtree:sync",
+    "subtree:update": "node tools/manager/cli.mjs subtree:update",
+    "subtree:push": "node tools/manager/cli.mjs subtree:push",
+    "manager:update": "node tools/manager/cli.mjs manager:update",
+    "manager:check": "node tools/manager/cli.mjs manager:update --check",
+    "manager:baseline": "node tools/manager/cli.mjs manager:baseline"
+  },
+  "devDependencies": {
+    "@lydell/node-pty": "1.2.0-beta.18",
+    "eslint": "10.13.0",
+    "prettier": "3.9.10",
+    "turbo": "2.11.10",
+    "typescript": "7.0.2"
+  }
+}

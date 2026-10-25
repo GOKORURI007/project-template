@@ -1,0 +1,141 @@
+{
+  "$schema": "https://turborepo.dev/schema.json",
+  "ui": "tui",
+  "globalEnv": [
+    "TEMPLATE_PLATFORM",
+    "TEMPLATE_TOOLCHAIN_ID",
+    "GOOS",
+    "GOARCH",
+    "GOFLAGS",
+    "CGO_ENABLED",
+    "RUSTFLAGS",
+    "CARGO_BUILD_TARGET",
+    "NODE_OPTIONS"
+  ],
+  "globalPassThroughEnv": ["*"],
+  "globalDependencies": [
+    "tools/manager/**",
+    "project.config.json",
+    "eslint.config.mjs",
+    ".prettierrc.json",
+    "Cargo.toml",
+    "Cargo.lock",
+    "go.work",
+    "go.work.sum",
+    "pyproject.toml",
+    "uv.lock"
+  ],
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "interactive": false
+    },
+    "start": {
+      "cache": false,
+      "persistent": true,
+      "interactive": false
+    },
+    "deploy": {
+      "cache": false
+    },
+    "//#init": {
+      "cache": false,
+      "interactive": true
+    },
+    "//#release": {
+      "cache": false,
+      "interactive": true
+    },
+    "//#release:retry": {
+      "cache": false
+    },
+    "//#test:integration": {
+      "cache": false
+    },
+    "//#manager:check": {
+      "cache": false
+    },
+    "//#format": {
+      "cache": false
+    },
+    "//#format:check": {
+      "cache": false
+    },
+    "//#lint": {
+      "cache": false
+    },
+    "//#lint:fix": {
+      "cache": false
+    },
+    "//#typecheck": {
+      "cache": false
+    },
+    "//#test": {
+      "cache": false
+    },
+    "//#build": {
+      "cache": false
+    },
+    "pkg:format": {
+      "cache": false
+    },
+    "pkg:format:check": {},
+    "pkg:lint": {},
+    "pkg:lint:fix": {
+      "cache": false
+    },
+    "pkg:typecheck": {},
+    "pkg:test": {},
+    "pkg:build": {
+      "dependsOn": ["^pkg:build"],
+      "outputs": ["dist/**", "target/**"]
+    },
+    "//#submodule": {
+      "cache": false,
+      "interactive": true
+    },
+    "//#submodule:status": {
+      "cache": false
+    },
+    "//#submodule:init": {
+      "cache": false
+    },
+    "//#submodule:sync": {
+      "cache": false
+    },
+    "//#submodule:update": {
+      "cache": false
+    },
+    "//#submodule:push": {
+      "cache": false
+    },
+    "//#subtree": {
+      "cache": false,
+      "interactive": true
+    },
+    "//#subtree:status": {
+      "cache": false
+    },
+    "//#subtree:init": {
+      "cache": false
+    },
+    "//#subtree:sync": {
+      "cache": false
+    },
+    "//#subtree:update": {
+      "cache": false
+    },
+    "//#subtree:push": {
+      "cache": false
+    },
+    "//#manager:update": {
+      "cache": false,
+      "interactive": true
+    },
+    "//#manager:baseline": {
+      "cache": false,
+      "interactive": true
+    }
+  }
+}

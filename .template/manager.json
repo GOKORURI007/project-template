@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "bundled",
+  "directory": "tools/manager",
+  "files": {
+    "cli.mjs": "01587a4ef11c3bd304a19d7da7288c7f2a2aa3243dad9b19aa1ecf661d8672fe",
+    "config.mjs": "90f0751bbd9595ff522ce518b076ce0a541d249cb279edbcd765963392a01065",
+    "core.mjs": "d7fab929f645b09aa97c30526ee55ee26561ec8df3ed053fe2d29bf32581281a",
+    "external.mjs": "33fb6e39a79ef7fde57a3f909ceae6307e1605b666c154fe07f45319795d7ba0",
+    "git.mjs": "11c7cdec512d3186cab23f64bacc2ddeda866c158238f5fc223d72dce303b4cf",
+    "init.mjs": "df9be51ad8dbb271ed1afc88bc83c085b5b4e01539cffcc11ada5b5cc1df3e77",
+    "languages/go.mjs": "a2db31135544cc8c0e76a8383b8c62b28c65262f5cbc250e9c35465885c53645",
+    "languages/python.mjs": "ca4318029364333a86d708df716888b9d43282e052dc5dd297233460a7d6b6b8",
+    "languages/rust.mjs": "9d917957b33780f994c3d4322bce960def7b4e23e16e0755dfc7e5959a9ab03b",
+    "languages/toml-version.mjs": "468d57695ddf0f452cad58a327a5bc4c417b986055ef9c5f87bcd091b2bff74e",
+    "package-manager.mjs": "586fb9e8b47c474fc729da72007e484dbb8e4ddadcaba12e791e8b2c3da6f12f",
+    "package.json": "588e54d13cfaa446b86e99d218ce4dc4473ad061baa16ac9cddfff9e9440034b",
+    "prompts.mjs": "d00d51cfb6714a6ddb8918a3f3620bfe06b7e1f23ccd46582f4e4a685542870a",
+    "publish.mjs": "919e28572146559163511b94694d2133713e80f94e1629f711164a34c9d65894",
+    "README.md": "9b410a1b050bfabaf1e85e7f3f2939facd01a16029eed270a1ea13668d2c24fb",
+    "release.mjs": "e316f774527b7c9cfb5b1271a57840a7d1161f124a99cdb1ea42cadad0f36ab9",
+    "requirements.mjs": "8256ec1ce8d0fe57761a2e1983c641420a6dd75af5978637e2c593497f757ee5",
+    "selection.mjs": "a2480121acd1d5ad324c5c23ea964359a9be3392a113dcb39aa92b1d1c01844c",
+    "snapshot.mjs": "383ffed4e12a588f5765c790f04f370e8c152e34de2a448c36e36068ced053cc",
+    "tasks.mjs": "8743d5babb9b028f2504bb2da38693f1a3da7f30ea8b4897724a754e99a53e30",
+    "update.mjs": "908d40ccc7800bc81b889cc5f9d71fc45976943205aacdc50b90c2d9d2d776e3",
+    "versions.mjs": "25ad49c7e44cfb129f1d3fc0024d9b40d9c3c7d99c549ecf3beeb2cae954e88c",
+    "workspaces.mjs": "56feee79a66b753abae739d4601d2b88706222e8762e2d38b28c227877b71da4"
+  }
+}
