@@ -1,0 +1,5 @@
+interface:
+  display_name: "CodeTour 生成"
+  short_description: "为指定功能生成 CodeTour 导览文件"
+policy:
+  allow_implicit_invocation: false

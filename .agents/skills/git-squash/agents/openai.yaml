@@ -1,0 +1,5 @@
+interface:
+  display_name: "合并提交"
+  short_description: "把历史 commit 压缩为一个 Group Commit"
+policy:
+  allow_implicit_invocation: false

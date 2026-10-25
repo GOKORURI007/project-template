@@ -1,0 +1,14 @@
+
+# APM dependencies
+apm_modules/
+
+node_modules/
+.turbo/
+dist/
+coverage/
+.venv/
+__pycache__/
+.ruff_cache/
+.pytest_cache/
+target/
+*.egg-info/

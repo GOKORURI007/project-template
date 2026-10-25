@@ -1,0 +1,15 @@
+name: project-template
+version: 1.0.0
+description: APM project for project-template
+author: yaojca
+# Which agent platforms to deploy to (uncomment to pin):
+targets:
+  - agent-skills
+#   - claude
+
+dependencies:
+  apm:
+    - GOKORURI007/skills/packages/engineering#master
+  mcp: []
+includes: auto
+scripts: {}

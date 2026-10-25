@@ -1,0 +1,5 @@
+interface:
+  display_name: "原子化提交"
+  short_description: "按功能模块拆分工作区改动并原子化提交"
+policy:
+  allow_implicit_invocation: false
